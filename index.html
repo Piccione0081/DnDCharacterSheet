@@ -3,8 +3,25 @@
     <head>
         <meta charset="UTF-8">
         <title>📜 DnD Character Sheet Maker</title>
+        <link rel="stylesheet" href="./style.css">
+        <script src="./index.js"></script>
     </head>
     <body>
-        <h1>Character Sheet 5e</h1>
+        <h1>Character Sheet Maker</h1>
+        <div id="form-field">
+            <input id="character-name" type="text" placeholder="Nome Personaggio">
+            <input id="player-name" type="text" placeholder="Nome Giocatore">
+            <div id="character-alignment">
+                <div onclick="setCharacterAlignment('lawful-good')" class="lg">Legale buono</div>
+                <div onclick="setCharacterAlignment('neutral-good')" class="ng">Neutrale buono</div>
+                <div onclick="setCharacterAlignment('chaotic-good')" class="cg">Caotico buono</div>
+                <div onclick="setCharacterAlignment('lawful-neutral')" class="ln">Legale neutrale</div>
+                <div onclick="setCharacterAlignment('true-neutral')" class="nn">Senza allineamento</div>
+                <div onclick="setCharacterAlignment('chaotic-neutral')" class="cn">Caotico neutrale</div>
+                <div onclick="setCharacterAlignment('lawful-evil')" class="le">Legale malvagio</div>
+                <div onclick="setCharacterAlignment('neutral-evil')" class="ne">Neutrale malvagio</div>
+                <div onclick="setCharacterAlignment('chaotic-evil')" class="ce">Caotico malvagio</div>
+            </div>
+        </div>
     </body>
 </html>

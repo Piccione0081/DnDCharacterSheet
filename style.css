@@ -1,0 +1,10 @@
+div#character-alignment {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+}
+div#character-alignment>div {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+}
